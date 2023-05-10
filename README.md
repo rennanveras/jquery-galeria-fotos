@@ -20,7 +20,8 @@
  ## Visualize o projeto 
  Link do projeto > <a href="https://veras-jquery-galeria-fotos.vercel.app">Galeria de fotos</a>
  <div display="block">
-    <h3>Desktop</h3>
-    <img  width="500px" src="https://servidor-estaticos-ashen.vercel.app/galeria.gif">
+    <img  width="500px" src="https://servidor-estaticos-ashen.vercel.app/album-1.png">
+    <img  width="500px" src="https://servidor-estaticos-ashen.vercel.app/album-2.png">
+    <img  width="500px" src="https://servidor-estaticos-ashen.vercel.app/album-3.png">
     <br>
  </div>
