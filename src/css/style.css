@@ -5,15 +5,20 @@
     font-family: Roboto, sans-serif;
 }
 
+body {
+    background-color: #f1f1f1;
+}
+
 header{
-    background-color: #5f27cd;
+    background-color: #B33771;
     padding: 16px 0;
     color: #fff;
     display: flex;
-    border-bottom: 16px solid #341f97;
-    justify-content: center;
+    border-bottom: 16px solid #6D214F;
+    justify-content: space-around;
     text-transform:uppercase;
     font-style:italic;
+    align-items: center;
 }
 
 header button {
@@ -21,7 +26,7 @@ header button {
 }
 
 form {
-    background-color: #c8d6e5;
+    background-color: #dbc8e5;
     padding: 24px 0;
     text-align:center;
     display:none;
@@ -31,9 +36,19 @@ form h2{
     margin-bottom: 16px;
 }
 
+.area-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+input {
+    max-width: 280px;
+    width: 100%;
+}
+
 input, button{
     padding: 8px;
-
+    border-radius: 6px;
 }
 
 button{
@@ -43,6 +58,7 @@ button{
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
+    border-radius: 35px;
 }
 
 #btn-cancelar{
@@ -50,20 +66,25 @@ button{
 }
 
 ul{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
 }
 
 ul li {
-    max-width: 25%;
+    max-width: 100%;
     list-style:none;
     position: relative;
     max-height: 280px;
-    overflow-y: hidden;
+    height: 100%;
 }
+
 
 ul li img{
     width:100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1;
 }
 
 .overlay-imagem-link{
@@ -84,4 +105,23 @@ ul li img{
 
 ul li:hover .overlay-imagem-link{
     opacity: 1;
+}
+
+@media (max-width:768px){
+    header h1 {
+        font-size: 20px;
+    }
+
+    .area-input {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
